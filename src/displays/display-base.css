@@ -1,0 +1,4 @@
+.display-base {
+  container-type: inline-size;
+  box-sizing: border-box;
+}
