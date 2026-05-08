@@ -1,0 +1,41 @@
+/* Default (narrow): image full-width, caption centered below */
+.image-display__img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 4px;
+}
+
+.image-display__caption {
+  font-size: 0.75rem;
+  color: #888;
+  margin: 0.5rem 0 0;
+  text-align: center;
+  line-height: 1.4;
+}
+
+/* Medium (>= 300px): caption left-aligned */
+@container (min-width: 300px) {
+  .image-display__caption {
+    text-align: left;
+    font-size: 0.85rem;
+    line-height: 1.5;
+  }
+}
+
+/* Wide (>= 600px): image and caption side by side */
+@container (min-width: 600px) {
+  .image-display {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    align-items: center;
+  }
+
+  .image-display__caption {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin: 0;
+    color: #555;
+  }
+}
