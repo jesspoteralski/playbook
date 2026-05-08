@@ -27,20 +27,20 @@ export default function App() {
     <div className="demo-page">
 
       {/* Section 1: 1 column — wide container behavior */}
-      <p className="demo-label">Layout · columns=1 · wide container</p>
+      <p className="demo-label">Layout · columns=1 · wide container (≥600px)</p>
       <Layout columns={1} padding="2rem" background="#ffffff">
         <TextDisplay {...textProps} />
       </Layout>
 
       {/* Section 2: 2 columns — medium container behavior */}
-      <p className="demo-label">Layout · columns=2 · medium containers</p>
+      <p className="demo-label">Layout · columns=2 · wide containers (≥600px)</p>
       <Layout columns={2} gap="2rem" padding="2rem" background="#f5f5f5">
         <TextDisplay {...textProps} />
         <ImageDisplay {...imageProps} />
       </Layout>
 
       {/* Section 3: 3 columns — narrow container behavior */}
-      <p className="demo-label">Layout · columns=3 · narrow containers</p>
+      <p className="demo-label">Layout · columns=3 · medium containers (300–600px)</p>
       <Layout columns={3} gap="1.5rem" padding="2rem" background="#ffffff">
         <TextDisplay {...textProps} />
         <ImageDisplay {...imageProps} />
@@ -48,13 +48,13 @@ export default function App() {
       </Layout>
 
       {/* Section 4: asymmetric 2:1 */}
-      <p className="demo-label">Layout · columns="2fr 1fr" · asymmetric</p>
+      <p className="demo-label">Layout · columns="2fr 1fr" · wide (2fr) + medium (1fr)</p>
       <Layout columns="2fr 1fr" gap="2rem" padding="2rem" background="#f0f4ff">
         <VideoDisplay {...videoProps} />
         <TextDisplay
           eyebrow="Narrow column"
           title="Same component, different context"
-          body="This TextDisplay is in a narrow 1fr column — compact and stacked. The VideoDisplay beside it is in a wide 2fr column — side-by-side layout."
+          body="This TextDisplay is in a medium 1fr column — stacked. The VideoDisplay beside it is in a wide 2fr column — side-by-side layout."
         />
       </Layout>
 
