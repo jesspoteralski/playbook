@@ -9,7 +9,7 @@ export function VideoDisplay({ src, title, caption }) {
       </div>
       {(title || caption) && (
         <div className="video-display__meta">
-          {title && <p className="video-display__title">{title}</p>}
+          {title && <h3 className="video-display__title">{title}</h3>}
           {caption && <p className="video-display__caption">{caption}</p>}
         </div>
       )}

@@ -8,9 +8,11 @@ export function TextDisplay({ eyebrow, title, body }) {
         {eyebrow && <p className="text-display__eyebrow">{eyebrow}</p>}
         {title && <h2 className="text-display__title">{title}</h2>}
       </div>
-      <div className="text-display__right">
-        {body && <p className="text-display__body">{body}</p>}
-      </div>
+      {body && (
+        <div className="text-display__right">
+          <p className="text-display__body">{body}</p>
+        </div>
+      )}
     </div>
   );
 }

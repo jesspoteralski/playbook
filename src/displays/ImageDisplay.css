@@ -15,7 +15,7 @@
 }
 
 /* Medium (>= 300px): caption left-aligned */
-@container (min-width: 300px) {
+@container display (min-width: 300px) {
   .image-display__caption {
     text-align: left;
     font-size: 0.85rem;
@@ -24,7 +24,7 @@
 }
 
 /* Wide (>= 600px): image and caption side by side */
-@container (min-width: 600px) {
+@container display (min-width: 600px) {
   .image-display {
     display: grid;
     grid-template-columns: 1fr 1fr;

@@ -26,7 +26,7 @@
 }
 
 /* Medium (300px–600px): comfortable spacing, larger type */
-@container (min-width: 300px) {
+@container display (min-width: 300px) {
   .text-display__eyebrow {
     font-size: 0.75rem;
   }
@@ -43,7 +43,7 @@
 }
 
 /* Wide (>= 600px): headline left, body right */
-@container (min-width: 600px) {
+@container display (min-width: 600px) {
   .text-display {
     display: grid;
     grid-template-columns: 1fr 1fr;
