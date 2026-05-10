@@ -1,0 +1,23 @@
+.link-display__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3em;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #111;
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+.link-display__text {
+  border-bottom: 1.5px solid transparent;
+  transition: border-color 0.15s ease;
+}
+
+.link-display__link:hover {
+  color: #2563eb;
+}
+
+.link-display__link:hover .link-display__text {
+  border-bottom-color: #2563eb;
+}

@@ -1,0 +1,31 @@
+.hero {
+  position: relative;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+}
+
+.hero__content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  width: 75%;
+  padding: 2rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.hero__content .heading-display__eyebrow,
+.hero__content .heading-display__heading,
+.hero__content .paragraph-display__text {
+  color: #fff;
+}

@@ -1,0 +1,7 @@
+.card {
+  container-type: inline-size;
+  container-name: display;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}

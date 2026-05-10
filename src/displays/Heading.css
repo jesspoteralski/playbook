@@ -1,0 +1,27 @@
+.heading-display__eyebrow {
+  font-size: 0.7rem;
+  font-weight: 500;
+  font-style: italic;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #888;
+  margin: 0 0 0.5rem;
+}
+
+.heading-display__heading {
+  margin: 0;
+  line-height: 1.15;
+  font-weight: 600;
+}
+
+.heading-display__heading--1 { font-size: 2.5rem; }
+.heading-display__heading--2 { font-size: 1.75rem; }
+.heading-display__heading--3 { font-size: 1.25rem; }
+.heading-display__heading--4 { font-size: 1rem; }
+
+@container display (max-width: 300px) {
+  .heading-display__heading--1 { font-size: 1.75rem; }
+  .heading-display__heading--2 { font-size: 1.25rem; }
+  .heading-display__heading--3 { font-size: 1rem; }
+  .heading-display__heading--4 { font-size: 0.875rem; }
+}

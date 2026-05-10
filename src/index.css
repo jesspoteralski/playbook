@@ -1,10 +1,45 @@
+@font-face {
+  font-family: 'AtUmami';
+  src: url('/fonts/AtUmami-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AtUmami';
+  src: url('/fonts/AtUmami-RegularItalic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'AtUmami';
+  src: url('/fonts/AtUmami-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AtUmami';
+  src: url('/fonts/AtUmami-MediumItalic.woff2') format('woff2');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'AtUmami';
+  src: url('/fonts/AtUmami-Semibold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+}
+
 *, *::before, *::after {
   box-sizing: border-box;
 }
 
 body {
   margin: 0;
-  font-family: system-ui, -apple-system, sans-serif;
+  font-family: 'AtUmami', system-ui, sans-serif;
   background: #fff;
   color: #111;
 }

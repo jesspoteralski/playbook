@@ -1,0 +1,19 @@
+.list-display__list {
+  margin: 0;
+  padding: 0 0 0 1.25rem;
+  list-style: disc;
+}
+
+.list-display__item {
+  font-size: 0.95rem;
+  font-weight: 400;
+  color: #333;
+  line-height: 1.7;
+  padding: 0.1rem 0;
+}
+
+@container display (max-width: 300px) {
+  .list-display__item {
+    font-size: 0.8rem;
+  }
+}
