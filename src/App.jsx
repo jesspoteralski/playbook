@@ -12,6 +12,8 @@ import { Card } from "./displays/Card";
 import { Hero } from "./displays/Hero";
 import "./App.css";
 
+const asset = (path) => `${import.meta.env.BASE_URL}${path}`;
+
 const textProps = {
   eyebrow: "Design Systems",
   title: "A composable layout system",
@@ -19,13 +21,13 @@ const textProps = {
 };
 
 const imageProps = {
-  src: "/pexels-roxanne-minnish-2936023-12319210.jpg",
+  src: asset("dolo-iglesias-FjElUqGfbAw-unsplash.jpg"),
   alt: "Violin section performing live in concert",
   caption: "Violinists mid-performance under stage lighting.",
 };
 
 const videoProps = {
-  src: "/MPEG-4 movie.mp4",
+  src: asset("MPEG-4 movie.mp4"),
   title: "Live at the Porch Sessions",
   caption: "A captivating orchestra performance featuring violins and cellos.",
 };
@@ -35,7 +37,7 @@ export default function App() {
     <div>
       <Layout width="100%">
         <Hero
-          src="/pexels-roxanne-minnish-2936023-12319210.jpg"
+          src={asset("larisa-birta-slbOcNlWNHA-unsplash.jpg")}
           eyebrow="The Playbook"
           heading="A Composable Layout System"
           body="Layout elements control structure. Display elements control content. Container queries bridge the two."
@@ -53,7 +55,6 @@ export default function App() {
         </Paragraph>
       </Layout>
 
-      <p className="demo-label">Layout · columns=2 · Display wrappers styled</p>
       <Layout columns={2} gap="2rem" padding="2rem" background="#f5f5f5">
         <Text
           {...textProps}
@@ -83,6 +84,7 @@ export default function App() {
         </Stack>
         <Image
           {...imageProps}
+          src={asset("manuel-nageli-p60mNTW5glI-unsplash.jpg")}
           padding="1rem"
           border="1px solid #eee"
           borderRadius="6px"
@@ -105,8 +107,6 @@ export default function App() {
         />
       </Layout>
 
-      {/* Section 5: new display components */}
-      <p className="demo-label">Heading · List · Paragraph · Button</p>
       <Layout columns={2} gap="2rem" padding="2rem" background="#ffffff">
         <Layout columns={1} gap="1rem" padding="0">
           <Heading level={1}>Heading One</Heading>
@@ -146,11 +146,9 @@ export default function App() {
           </Layout>
         </Layout>
       </Layout>
-      {/* Section 6: Card as container */}
-      <p className="demo-label">Card · Display elements as children</p>
       <Layout columns={3} gap="1.5rem" padding="2rem" background="#f5f5f5">
         <Card>
-          <Image {...imageProps} />
+          <Image src={asset("larisa-birta-slbOcNlWNHA-unsplash.jpg")} />
           <Heading level={3} eyebrow="Featured">
             String Section
           </Heading>

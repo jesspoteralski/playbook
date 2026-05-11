@@ -64,12 +64,12 @@ npm run lint
 
 ## Available Scripts
 
-| Script | Description |
-| --- | --- |
-| `npm run dev` | Starts the Vite development server. |
-| `npm run build` | Creates a production build. |
+| Script            | Description                              |
+| ----------------- | ---------------------------------------- |
+| `npm run dev`     | Starts the Vite development server.      |
+| `npm run build`   | Creates a production build.              |
 | `npm run preview` | Serves the built app locally for review. |
-| `npm run lint` | Runs ESLint across the project. |
+| `npm run lint`    | Runs ESLint across the project.          |
 
 ## Project Structure
 
@@ -118,16 +118,16 @@ Example:
 
 ```jsx
 <Layout columns={2} gap="2rem" padding="2rem" background="#f5f5f5">
-	<Text
-		eyebrow="Design Systems"
-		title="A composable layout system"
-		body="Container queries let the component adapt to the width of its parent."
-	/>
-	<Image
-		src="/example.jpg"
-		alt="Example"
-		caption="Image and text can be swapped into the same layout pattern."
-	/>
+  <Text
+    eyebrow="Design Systems"
+    title="A composable layout system"
+    body="Container queries let the component adapt to the width of its parent."
+  />
+  <Image
+    src="/example.jpg"
+    alt="Example"
+    caption="Image and text can be swapped into the same layout pattern."
+  />
 </Layout>
 ```
 
@@ -169,25 +169,25 @@ That separation is the main architectural idea in the repo.
 
 ### Layout primitives
 
-| Component | Purpose |
-| --- | --- |
-| `Layout` | Grid-based page section wrapper with configurable columns, spacing, and width. |
-| `Stack` | Vertical flow container for grouping related items. |
+| Component | Purpose                                                                        |
+| --------- | ------------------------------------------------------------------------------ |
+| `Layout`  | Grid-based page section wrapper with configurable columns, spacing, and width. |
+| `Stack`   | Vertical flow container for grouping related items.                            |
 
 ### Display primitives
 
-| Component | Purpose |
-| --- | --- |
-| `Hero` | Large image-backed banner with heading and supporting copy. |
-| `Text` | Split text block with eyebrow, title, and body. |
-| `Image` | Image with optional caption. |
-| `Video` | Video player with optional title and caption. |
-| `Heading` | Standalone heading with optional eyebrow. |
-| `Paragraph` | Body copy block. |
-| `List` | Simple unordered list. |
-| `Button` | Action button; can render as an anchor when `url` is provided. |
-| `Link` | Text link with optional built-in icon variants. |
-| `Card` | Surface container used to group content blocks together. |
+| Component   | Purpose                                                        |
+| ----------- | -------------------------------------------------------------- |
+| `Hero`      | Large image-backed banner with heading and supporting copy.    |
+| `Text`      | Split text block with eyebrow, title, and body.                |
+| `Image`     | Image with optional caption.                                   |
+| `Video`     | Video player with optional title and caption.                  |
+| `Heading`   | Standalone heading with optional eyebrow.                      |
+| `Paragraph` | Body copy block.                                               |
+| `List`      | Simple unordered list.                                         |
+| `Button`    | Action button; can render as an anchor when `url` is provided. |
+| `Link`      | Text link with optional built-in icon variants.                |
+| `Card`      | Surface container used to group content blocks together.       |
 
 ## Example Composition Patterns
 
@@ -195,12 +195,12 @@ That separation is the main architectural idea in the repo.
 
 ```jsx
 <Layout width="100%">
-	<Hero
-		src="/hero.jpg"
-		eyebrow="The Playbook"
-		heading="A Composable Layout System"
-		body="Layout elements control structure. Display elements control content."
-	/>
+  <Hero
+    src="/hero.jpg"
+    eyebrow="The Playbook"
+    heading="A Composable Layout System"
+    body="Layout elements control structure. Display elements control content."
+  />
 </Layout>
 ```
 
@@ -208,18 +208,18 @@ That separation is the main architectural idea in the repo.
 
 ```jsx
 <Layout columns="2fr 1fr" gap="2rem" padding="2rem" background="#f0f4ff">
-	<Video
-		src="/video.mp4"
-		title="Live at the Porch Sessions"
-		caption="A performance example inside a wider column."
-		padding="2rem"
-	/>
-	<Text
-		eyebrow="Narrow column"
-		title="Same component, different context"
-		body="The Text block adapts to its column width rather than only the viewport."
-		padding="1.5rem"
-	/>
+  <Video
+    src="/video.mp4"
+    title="Live at the Porch Sessions"
+    caption="A performance example inside a wider column."
+    padding="2rem"
+  />
+  <Text
+    eyebrow="Narrow column"
+    title="Same component, different context"
+    body="The Text block adapts to its column width rather than only the viewport."
+    padding="1.5rem"
+  />
 </Layout>
 ```
 
@@ -227,13 +227,18 @@ That separation is the main architectural idea in the repo.
 
 ```jsx
 <Layout columns={3} gap="1.5rem" padding="2rem" background="#f5f5f5">
-	<Card>
-		<Heading level={3} eyebrow="Featured">String Section</Heading>
-		<Paragraph>
-			Violinists and cellists performing together in an intimate concert setting.
-		</Paragraph>
-		<Link url="https://example.com" icon="chevron-right">Learn more</Link>
-	</Card>
+  <Card>
+    <Heading level={3} eyebrow="Featured">
+      String Section
+    </Heading>
+    <Paragraph>
+      Violinists and cellists performing together in an intimate concert
+      setting.
+    </Paragraph>
+    <Link url="https://example.com" icon="chevron-right">
+      Learn more
+    </Link>
+  </Card>
 </Layout>
 ```
 
